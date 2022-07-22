@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  deleter:
+    build:
+      context: .
+      dockerfile: ./src/Dockerfile
+    stdin_open: true
+    tty: true
+    container_name: deleter
+
+# docker-compose build
+# docker-compose run --rm ingester
