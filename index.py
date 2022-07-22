@@ -10,7 +10,7 @@ class main(Cmd):
     def do_delete(self, args):
         table, projectKey = args.split(" ", 2)
         print(f"Deleting '{projectKey}' from table '{table}'")
-        deleter.rowDeleter(table, ProjectKey=f"{projectKey}")
+        deleter.rowDeleter(table,dev=False, ProjectKey=f"{projectKey}")
 
     def do_exit(self, args):
         raise SystemExit()
